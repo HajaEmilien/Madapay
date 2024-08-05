@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
-import { useUserAuth } from '@/_utils/UserAuthContext';
+import { useUserAuth } from '../_utils/UserAuthContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import logo from '../Asset/logo.png';
-import Customer from '@/Asset/Customer.png';
-import Deconnexion from '@/Asset/Deconnexion.png';
+import Deconnexion from '../Asset/Deconnexion.png';
 import Footer from './Footer';
 import '../Style/Navbar.css';
 

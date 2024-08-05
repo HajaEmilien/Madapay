@@ -1,15 +1,14 @@
 import './App.css';
-import Home from '@/pages/Home';
-import Inscription from '@/pages/Inscription';
-import Connexion from '@/pages/Connexion';
-import Error from '@/_utils/Error';
+import Inscription from './pages/Inscription';
+import Connexion from './pages/Connexion';
+import Error from './_utils/Error';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Support from '@/pages/Support';
+import Support from './pages/Support';
 import Layout from './Component/Layout';
-import { UserAuthContextProvider } from "@/_utils/UserAuthContext";
+import { UserAuthContextProvider } from "./_utils/UserAuthContext";
 import AuthGuard from './_utils/AuthGuard';
 import Profil from './pages/Profil'; 
-import Tron from '@/Component/Tron'
+import Tron from './Component/Tron'
 import Bitcoin from './Component/Bitcoin';
 import Payeer from './Component/Payeer';
 import Perfect from './Component/Perfect'; 
@@ -23,7 +22,6 @@ function App() {
 
             <Route element={<Layout />}>
 
-              <Route path="/home" element={<AuthGuard><Home /></AuthGuard>} />
               <Route path="/support" element={<AuthGuard><Support /></AuthGuard>} />
               <Route path="/profil" element={<AuthGuard><Profil /></AuthGuard>} />
               <Route path="/tron" element={<AuthGuard><Tron /></AuthGuard>} />

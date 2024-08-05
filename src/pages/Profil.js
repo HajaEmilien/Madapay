@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useUserAuth } from '@/_utils/UserAuthContext';
+import { useUserAuth } from '../_utils/UserAuthContext';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
