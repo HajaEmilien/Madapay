@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
-import { useUserAuth } from '@/_utils/UserAuthContext';
+import { useUserAuth } from '../_utils/UserAuthContext';
 const AuthGuard = ({ children }) => {
   const { user } = useUserAuth();
 
